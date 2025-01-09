@@ -4,10 +4,13 @@ import { motion } from "motion/react";
 import { Link } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
 import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import Shapes from "./Shapes";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div className="py-7">
+      <Shapes />
       <motion.img
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -25,7 +28,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
-          className="text-4xl md:text-5xl flex flex-col gap-4 font-bold mb-4"
+          className="text-4xl text-[#353252] md:text-5xl flex flex-col gap-4 font-bold mb-4"
         >
           Tushar Tailor
           <motion.span
@@ -49,27 +52,34 @@ const Home = () => {
             </span>
           </motion.span>
         </motion.h1>
-        <p className="mb-6">
+        <div className="mb-6">
           <div className="flex justify-center space-x-4 mt-4">
-            <a className="hover:text-gray-700" href="">
-              {" "}
-              <FaLinkedin className="w-6 h-6" />{" "}
+            <a
+              className="hover:text-gray-700 z-10 text-[#353252] cursor-pointer"
+              href="https://www.linkedin.com/in/tushartailor"
+              target="_blank"
+            >
+              <FaLinkedin className="w-6 h-6" />
             </a>
-            <a className="hover:text-gray-700" href="">
-              {" "}
-              <FaTwitter className="w-6 h-6" />{" "}
+            <a
+              className="hover:text-gray-700 z-10 text-[#353252] cursor-pointer"
+              href="#"
+            >
+              <FaTwitter className="w-6 h-6" />
             </a>
-            <a className="hover:text-gray-700" href="">
-              {" "}
-              <FaInstagram className="w-6 h-6" />{" "}
+            <a
+              className="hover:text-gray-700 z-10 text-[#353252] cursor-pointer"
+              href="#"
+            >
+              <FaInstagram className="w-6 h-6" />
             </a>
           </div>
-        </p>
+        </div>
         <motion.button
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="px-6 py-3 rounded-full bg-black text-white"
+          className="px-6 py-3 rounded-full bg-[#FF4C61] text-white"
         >
           <Link to="contact" smooth={true} duration={500} offset={-70}>
             Hire Me

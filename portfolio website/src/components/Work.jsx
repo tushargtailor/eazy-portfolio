@@ -32,13 +32,13 @@ const Work = () => {
   return (
     <div id="work" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl underline mb-12 font-bold text-center">
+        <h2 className="text-4xl text-[#353252] underline mb-12 font-bold text-center">
           Recent Works
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
-              className="bg-gray-600 shadow-lg rounded-lg overflow-hidden"
+              className="bg-indigo-400 shadow-lg rounded-lg overflow-hidden"
               key={project.id}
             >
               <img className="w-full h-48 object-cover" src={project.image} />

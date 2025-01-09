@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div>
+    <div className="bg-slate-100">
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ const Navbar = () => {
           <span className="text-[#353252]">TAILOR</span>
         </div>
         <div className="">
-          <ul className="hidden cursor-pointer md:flex items-center space-x-6 list-none lg:text-lg md:text-base ">
+          <ul className="hidden cursor-pointer text-[#353252] font-semibold md:flex items-center space-x-6 list-none lg:text-lg md:text-base ">
             {items.map(({ id, text, to }) => (
               <li key={id}>
                 <Link to={to} smooth={true} duration={500} offset={-70}>
@@ -52,7 +52,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a
-          className="md:text-base lg:text-lg bg-black text-white hover:text-gray-600 px-4 py-2 rounded-full"
+          className="md:text-base lg:text-lg bg-[#FF4C61] text-white hover:text-gray-600 px-4 py-2 rounded-full"
           href=""
         >
           Download CV
