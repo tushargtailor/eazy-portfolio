@@ -1,10 +1,10 @@
 import React from "react";
-import aboutImg from "../assets/hero1.jpg";
+import aboutImg from "../assets/hero.png";
 import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <div className="py-16">
+    <div id='about' className="py-16">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 underline">
           About Me
@@ -20,7 +20,8 @@ const About = () => {
             With a solid foundation in HTML, CSS, and JavaScript, I have
             experience working with various libraries and frameworks like
             ReactJS, Redux, and Bootstrap to develop dynamic and engaging user
-            interfaces.
+            interfaces. <br /><br />
+            As a fresher, I am highly motivated and eager to learn new technologies and best practices in web development. I am a quick learner and have excellent problem-solving skills, enabling me to develop clean and maintainable code that adheres to industry standards and best practices.
           </p>
         </div>
       </div>

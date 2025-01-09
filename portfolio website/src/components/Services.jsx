@@ -20,7 +20,7 @@ const Services = () => {
     ]
 
   return (
-    <div className='py-16 '>
+    <div id='services' className='py-16 '>
         <div className='container mx-auto px-32 text-center'>
             <h2 className='text-3xl md:text-4xl font-bold underline mb-8'>Services</h2>
             <div 

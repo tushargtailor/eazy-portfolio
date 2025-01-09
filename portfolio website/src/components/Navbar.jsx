@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { motion } from "motion/react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const variants = {
@@ -21,10 +22,10 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const items = [
-    { id: 1, text: "About" },
-    { id: 2, text: "Service" },
-    { id: 3, text: "Work" },
-    { id: 4, text: "Contact" },
+    { id: 1, text: "About", to: "about" },
+    { id: 2, text: "Service", to: "services" },
+    { id: 3, text: "Work", to: "work" },
+    { id: 4, text: "Contact", to: "contact" },
   ];
 
   return (
@@ -40,9 +41,13 @@ const Navbar = () => {
           <span className="text-[#353252]">TAILOR</span>
         </div>
         <div className="">
-          <ul className="hidden md:flex items-center space-x-6 list-none lg:text-lg md:text-base ">
-            {items.map(({ id, text }) => (
-              <li key={id}>{text}</li>
+          <ul className="hidden cursor-pointer md:flex items-center space-x-6 list-none lg:text-lg md:text-base ">
+            {items.map(({ id, text, to }) => (
+              <li key={id}>
+                <Link to={to} smooth={true} duration={500} offset={-70}>
+                  {text}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -67,9 +72,11 @@ const Navbar = () => {
             {menu && (
               <div className="flex flex-col justify-center items-center ">
                 <ul className="space-y-6 text-black text-lg">
-                  {items.map(({ id, text }) => (
+                  {items.map(({ id, text, to }) => (
                     <li key={id} className="cursor-pointer">
-                      {text}
+                      <Link to={to} smooth={true} duration={500} offset={-70}>
+                  {text}
+                </Link>
                     </li>
                   ))}
                 </ul>

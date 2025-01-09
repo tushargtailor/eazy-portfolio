@@ -11,26 +11,26 @@ const Work = () => {
       description:
         "A blog app where user can create a post and read pots With Authentication.",
       image: project1,
-      link: "#",
+      link: "https://mega-blogs.netlify.app/",
     },
     {
       id: 2,
       title: "Shopon",
       description: "SHOPON a E-commerce Website!",
       image: project2,
-      link: "#",
+      link: "https://tushar-shopon.netlify.app/",
     },
     {
       id: 3,
       title: "Image Search Engine",
       description: "Image Gallery wher you can find 4 Million+ Images!",
       image: project3,
-      link: "#",
+      link: "https://tushar-image-search-engine.netlify.app/",
     },
   ];
 
   return (
-    <div className="py-12">
+    <div id="work" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl underline mb-12 font-bold text-center">
           Recent Works
@@ -48,7 +48,9 @@ const Work = () => {
                 </h3>
                 <p className="text-slate-300 mb-4">{project.description}</p>
                 <button className="border-2 border-white text-gray-300 rounded-full px-4 py-2 hover:bg-gray-200 hover:text-black transition">
+
                   Live
+
                 </button>
               </div>
             </div>
