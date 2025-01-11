@@ -22,10 +22,11 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const items = [
-    { id: 1, text: "About", to: "about" },
-    { id: 2, text: "Service", to: "services" },
-    { id: 3, text: "Work", to: "work" },
-    { id: 4, text: "Contact", to: "contact" },
+    { id: 1, text: "Home", to: "home" },
+    { id: 2, text: "About", to: "about" },
+    { id: 3, text: "Service", to: "services" },
+    { id: 4, text: "Work", to: "work" },
+    { id: 5, text: "Contact", to: "contact" },
   ];
 
   return (
@@ -53,7 +54,8 @@ const Navbar = () => {
         </div>
         <a
           className="md:text-base lg:text-lg bg-[#FF4C61] text-white hover:text-gray-600 px-4 py-2 rounded-full"
-          href=""
+          href="https://drive.google.com/file/d/1tZHVA-0yMS3UhuGu5b58yyPkf665Y4KI/view?pli=1"
+          target="_blank"
         >
           Download CV
         </a>

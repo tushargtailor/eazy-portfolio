@@ -31,7 +31,7 @@ const Services = () => {
     <div id='services' className='py-16'>
         <div className='container mx-auto px-32 text-center'>
             <h2 className='text-3xl text-[#353252] md:text-4xl font-bold underline mb-8'>Services</h2>
-            <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
                 {ServicesData.map((service, index) => (
                     <div 
                         key={index} 

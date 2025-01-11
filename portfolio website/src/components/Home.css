@@ -1,54 +1,144 @@
+/* .shapes container - make it responsive */
 .shapes {
-    position: absolute;
-    left: 0;
-    top: 66px;
-    height: 80%;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  top: 66px; /* Adjust top value to position shapes correctly */
+  height: 80%; /* Default height for larger screens */
+  width: 100%;
+  z-index: -1; /* Ensure shapes are behind other content */
+}
+
+/* Ensure shapes do not overlap the button and other elements in mobile view */
+@media (max-width: 768px) {
+  .shapes {
+    height: 80%; /* Full screen height on mobile */
+    top: 0; /* Align shapes from the top */
+    z-index: -1; /* Keep shapes behind other elements */
   }
+}
+
+/* .shape class - adjust each shape's positioning */
+.shape {
+  position: absolute;
+  width: 50px; /* Smaller size for shapes on mobile */
+  height: 50px; /* Smaller size for shapes on mobile */
+}
+
+/* Specific positions for each shape on larger screens */
+.s1 {
+  left: 2%;
+  top: 10%;
+}
+
+.s2 {
+  left: 18%;
+  top: 30%;
+}
+
+.s3 {
+  left: 5%;
+  bottom: 30%;
+}
+
+.s4 {
+  left: 2%;
+  bottom: 30%;
+}
+
+.s5 {
+  left: 44%;
+  top: 10%;
+}
+
+.s6 {
+  left: 27%;
+  bottom: 10%;
+}
+
+.s7 {
+  top: 20%;
+  right: 25%;
+}
+
+.s8 {
+  right: 24%;
+  bottom: 20%;
+}
+
+.s9 {
+  right: 2%;
+  top: 10%;
+}
+
+.s10 {
+  right: 11%;
+  top: 45%;
+}
+
+.s11 {
+  bottom: 10%;
+  right: 2%;
+}
+
+/* Adjust shapes' position and size for mobile view */
+@media (max-width: 768px) {
   .shape {
-    position: absolute;
+    width: 50px; /* Smaller shapes on mobile */
+    height: 50px;
   }
+
   .s1 {
-    left: 2%;
+    left: 5%;
     top: 10%;
   }
+
   .s2 {
-    left: 18%;
+    left: 10%;
     top: 30%;
   }
+
   .s3 {
     left: 5%;
-    bottom: 30%;
+    bottom: 10%;
   }
+
   .s4 {
-    left: 2%;
-    bottom: 30%;
+    left: 10%;
+    bottom: 10%;
   }
+
   .s5 {
-    left: 44%;
+    left: 40%;
     top: 10%;
   }
+
   .s6 {
-    left: 27%;
-    bottom: 10%;
+    left: 25%;
+    bottom: 5%;
   }
+
   .s7 {
-    top: 20%;
-    right: 25%;
+    top: 15%;
+    right: 20%;
   }
+
   .s8 {
-    right: 24%;
-    bottom: 20%;
-  }
-  .s9 {
-    right: 2%;
-    top: 10%;
-  }
-  .s10 {
-    right: 11%;
-    top: 45%;
-  }
-  .s11 {
+    right: 20%;
     bottom: 10%;
-    right: 2%;
   }
+
+  .s9 {
+    right: 5%;
+    top: 15%;
+  }
+
+  .s10 {
+    right: 10%;
+    top: 40%;
+  }
+
+  .s11 {
+    bottom: 5%;
+    right: 5%;
+  }
+}

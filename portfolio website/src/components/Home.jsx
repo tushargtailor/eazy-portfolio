@@ -9,7 +9,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="py-7">
+    <div id="home" className="py-6">
       <Shapes />
       <motion.img
         initial={{ opacity: 0, scale: 0 }}
@@ -52,29 +52,29 @@ const Home = () => {
             </span>
           </motion.span>
         </motion.h1>
-        <div className="mb-6">
+        <p className="mb-6">
           <div className="flex justify-center space-x-4 mt-4">
             <a
-              className="hover:text-gray-700 z-10 text-[#353252] cursor-pointer"
+              className=" text-[#353252] cursor-pointer"
               href="https://www.linkedin.com/in/tushartailor"
               target="_blank"
             >
               <FaLinkedin className="w-6 h-6" />
             </a>
             <a
-              className="hover:text-gray-700 z-10 text-[#353252] cursor-pointer"
+              className=" text-[#353252] cursor-pointer"
               href="#"
             >
               <FaTwitter className="w-6 h-6" />
             </a>
             <a
-              className="hover:text-gray-700 z-10 text-[#353252] cursor-pointer"
+              className=" text-[#353252] cursor-pointer"
               href="#"
             >
               <FaInstagram className="w-6 h-6" />
             </a>
           </div>
-        </div>
+        </p>
         <motion.button
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
